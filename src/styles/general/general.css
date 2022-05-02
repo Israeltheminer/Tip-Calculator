@@ -1,0 +1,14 @@
+body{
+   background-color: hsl(185, 41%, 84%);
+   font-family: 'Space Mono', monospace;
+   position: relative;
+}
+
+footer{
+   position: absolute;
+   right: 50%;
+   bottom: 0;
+   transform: translate(-50%);
+}
+
+

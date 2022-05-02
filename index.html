@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="./dist/images/favicon.png">
+	<link rel="stylesheet" href="./dist/styles/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+	<title>Tip calculator</title>
+</head>
+<body>
+	<div class="logo_container">
+		<img src="./dist/images/logo.svg">
+	</div>
+	<div class="workspace">
+		
+		<div class="input-box">
+
+			<p class="base_text">Bill</p>
+			<div class="input bill_input"><img src="./dist/images/icon-dollar.svg"></div>
+			
+			<p class="base_text">Select tip %</p>
+			<div class="tip_grid">
+				<div class="item">
+					<button class="small_button dark_button"><p class="text">5%</p></button>
+					<button class="small_button dark_button"><p class="text">10%</p></button>
+					<button class="small_button dark-button"><p class="text">15%</p></button>
+				</div>
+				<div class="item">
+					<button class="small_button dark_button"><p class="text">25%</p></button>
+					<button class="small_button dark_button"><p class="text">50%</p></button>
+					<button class="small_button light-button"><p class="text">Custom</p></button>
+				</div>
+			</div>
+
+			<p class="people_count">Number of People</p>
+			<div class="input total_input"><img src="./dist/images/icon-person.svg"></div>
+		</div>
+		
+
+		<div class="output-box">
+			<div>
+				<div>
+					<p>Tip Amount</p>
+					<p>/ person</p>
+				</div>
+				<div>
+					<p class="tip_per_person">
+						$0.00
+					</p>
+				</div>
+			</div>
+
+			<div>
+				<div>
+					<p>Total</p>
+					<p>/ person</p>
+				</div>
+				<div>
+					<p class="total_per_person">
+						$0.00
+					</p>
+				</div>
+			</div>
+
+			<div class="reset_button">
+				Reset
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="#">Iyanda Israel</a>.
+		</div>
+	</footer>
+	<script src="./dist/scripts/main.js"></script>
+</body>
+</html>

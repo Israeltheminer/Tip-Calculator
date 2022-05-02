@@ -1,0 +1,15 @@
+.logo_container{
+   display: flex;
+   margin: 5rem auto;
+   justify-content: center;
+}
+
+.workspace{
+   background-color: #fff;
+   border-radius: 20px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 4rem;
+   max-width: 900px;
+   margin: 0 auto;
+}
