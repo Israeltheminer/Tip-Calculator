@@ -34,7 +34,7 @@
 
    & .item{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 0.5rem;
    }
 }
@@ -53,10 +53,12 @@
 
 .light_button{
    background-color: hsl(189, 41%, 97%);
-   
+   padding-right: 0.5rem;
+
    & input{
-      padding-right: 0.2rem;
       text-align: right;
+      width: 100%;
+      outline: none;
    }
 }
 

@@ -4,7 +4,7 @@
   "description": "Code Challenge by Code Mentor coded by Iyanda Israel",
   "main": "index.js",
   "scripts": {
-    "postcss": "postcss ./src/styles/style.css --dir ./dist/styles",
+    "postcss": "postcss ./src/styles/style.css --dir ./dist/styles --watch",
     "webpack": "webpack"
   },
   "author": "",
