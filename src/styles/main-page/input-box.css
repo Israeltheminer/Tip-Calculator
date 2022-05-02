@@ -1,0 +1,71 @@
+.input_container{
+   border-radius: 20px;
+
+   & .input_box > input{
+      background-color: hsl(189, 41%, 97%);
+      background-repeat: no-repeat;
+      padding-left: 1rem;
+      background-position: left;
+      border-radius: 5px;
+      width: 100%;
+      padding: 0.65rem;
+      text-align: right;
+      margin-bottom: 2rem;
+      outline: none;
+   }
+
+   & input:focus{
+      outline: hsl(172, 67%, 45%) solid 2px;
+      caret-color: hsl(172, 67%, 45%);
+   }
+
+}
+
+.bill_input{
+   background-image: url(../images/icon-dollar.svg);
+}
+.total_input{
+   background-image: url(../images/icon-person.svg);
+   margin-bottom: 0;
+}
+
+.tip_grid{
+   display: grid;
+
+   & .item{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.5rem;
+   }
+}
+
+.dark_button{
+   background-color: hsl(183, 100%, 15%);
+   border-radius: 4px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   color: #fff;
+}
+.dark_button:focus{
+   background-color: hsl(172, 67%, 45%);
+   color: hsl(183, 100%, 15%);
+}
+
+.light_button{
+   background-color: hsl(189, 41%, 97%);
+   
+   & input{
+      padding-right: 0.2rem;
+      text-align: right;
+   }
+}
+
+.people_count{
+   margin-top: 2.75rem;
+}
+
+@media(max-width: 768px){
+   .input_container{
+      padding: 1rem;
+   }
+}

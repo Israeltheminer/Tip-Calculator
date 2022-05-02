@@ -9,7 +9,25 @@
    border-radius: 20px;
    display: grid;
    grid-template-columns: 1fr 1fr;
-   gap: 4rem;
-   max-width: 900px;
+   gap: 3rem;
+   max-width: 800px;
    margin: 0 auto;
+   padding: 2rem;
+}
+
+@media(max-width: 768px){
+   .workspace{
+      grid-template-columns: 1fr;
+      gap: 4rem;
+      max-width: 768px;
+      padding: 1.5rem;
+   }
+}
+@media(max-width: 450px){
+   .workspace{
+      grid-template-columns: 1fr;
+      gap: 4rem;
+      max-width: 768px;
+      padding: 0.75rem;
+   }
 }

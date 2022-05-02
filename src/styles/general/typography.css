@@ -1,0 +1,42 @@
+body{
+   font-family: 'Space Mono', monospace;
+}
+input{
+   font-size: 18px;
+}
+.small_text{
+   font-size: 10px;
+   opacity: 70%;
+}
+.base_text{
+   font-size: 14px;
+   font-weight: 200;
+}
+.big_text{
+   font-size: 18px;
+}
+.massive_text{
+   font-size: 40px;
+   color: hsl(172, 67%, 45%);
+}
+.reset_button{
+   font-size: 18px;
+   font-family: 'Poppins', sans-serif;
+   color: hsl(183, 100%, 15%);
+}
+.alert{
+   font-size: 12px;
+   color: rgb(255, 52, 52);
+}
+
+@media(max-width: 485px){
+   .massive_text{
+      font-size: 35px;
+   }
+}
+
+@media(max-width: 390px){
+   .massive_text{
+      font-size: 30px;
+   }
+}

@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="./dist/styles/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 	<title>Tip calculator</title>
 </head>
 <body>
@@ -16,62 +16,71 @@
 	</div>
 	<div class="workspace">
 		
-		<div class="input-box">
+		<div class="input_container">
 
-			<p class="base_text">Bill</p>
-			<div class="input bill_input"><img src="./dist/images/icon-dollar.svg"></div>
-			
-			<p class="base_text">Select tip %</p>
-			<div class="tip_grid">
-				<div class="item">
-					<button class="small_button dark_button"><p class="text">5%</p></button>
-					<button class="small_button dark_button"><p class="text">10%</p></button>
-					<button class="small_button dark-button"><p class="text">15%</p></button>
+			<div class="bill_box input_box">
+				<div class="flex justify-between">
+					<p class="base_text">Bill</p>
+					<p class="alert bill_alert hidden">Bill can't be Zero</p>
 				</div>
-				<div class="item">
-					<button class="small_button dark_button"><p class="text">25%</p></button>
-					<button class="small_button dark_button"><p class="text">50%</p></button>
-					<button class="small_button light-button"><p class="text">Custom</p></button>
-				</div>
+				<input type="number" class="bill_input">
 			</div>
-
-			<p class="people_count">Number of People</p>
-			<div class="input total_input"><img src="./dist/images/icon-person.svg"></div>
+			
+			<div class="tip_box">
+				<div class="flex justify-between">
+					<p class="base_text">Select tip %</p>
+					<p class="alert tip_alert hidden">Tip can't be Zero</p>
+				</div>
+				<div class="tip_grid">
+					<div class="item">
+						<button class="small_button dark_button" id="5"><p class="big_text">5%</p></button>
+						<button class="small_button dark_button" id="10"><p class="big_text">10%</p></button>
+						<button class="small_button dark_button" id="15"><p class="big_text">15%</p></button>
+						<button class="small_button dark_button" id="25"><p class="big_text">25%</p></button>
+						<button class="small_button dark_button" id="50"><p class="big_text">50%</p></button>
+						<button class="small_button light_button" id="customPecent"><input type="number" placeholder="Custom" class="custom_percent max-w-[5rem] bg-inherit"></button>
+					</div>
+				</div>		
+			</div>
+			
+			<div class="people_count input_box">
+				<div class="flex justify-between">
+					<p class="base_text">Number of people</p>
+					<p class="alert number_alert hidden">People can't be Zero</p>
+				</div>
+				<input type="number" class="total_input">
+			</div>
 		</div>
 		
 
-		<div class="output-box">
-			<div>
+		<div class="output_box">
+			<div class="flex_box">
 				<div>
-					<p>Tip Amount</p>
-					<p>/ person</p>
+					<p class='base_text'>Tip Amount</p>
+					<p class="small_text">/ person</p>
 				</div>
 				<div>
-					<p class="tip_per_person">
-						$0.00
-					</p>
+					<p class="tip_per_person massive_text">$0.00</p>
 				</div>
 			</div>
 
-			<div>
+			<div class="flex_box">
 				<div>
-					<p>Total</p>
-					<p>/ person</p>
+					<p class='base_text'>Total</p>
+					<p class="small_text">/ person</p>
 				</div>
 				<div>
-					<p class="total_per_person">
-						$0.00
-					</p>
+					<p class="total_per_person massive_text">$0.00</p>
 				</div>
 			</div>
 
 			<div class="reset_button">
-				Reset
+				<p>RESET</p>
 			</div>
 		</div>
 	</div>
 	<footer>
-		<div class="attribution">
+		<div class="attribution base_text">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
 			Coded by <a href="#">Iyanda Israel</a>.
 		</div>
